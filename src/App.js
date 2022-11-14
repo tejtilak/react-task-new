@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-
-function App() {
+import About from './components/About';
+import Aboutus from './components/Aboutus';
+import Carousel from './components/Carousel';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
+import Foottext from './components/Foottext';
+import Services from './components/Services';
+import Services1 from './components/Services1';
+import Navbar from './navbar/Navbar';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route exact path='/' element={<Carousel />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/services' element={<Services />} />
+          <Route exact path='/our services' element={<Services1 />} />
+          <Route exact path='/contact us' element={<ContactUs />} />
+          <Route exact path='/about us' element={<Aboutus />} />
+        </Routes>
+        <Foottext />
+        <Footer />
+      </BrowserRouter>
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

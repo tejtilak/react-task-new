@@ -1,38 +1,690 @@
-.App {
+body html {
+  overflow-x: hidden !important;
+}
+
+/* Navbar style sheet */
+
+.navbr {
+  position: -webkit-sticky;
+  position: sticky;
+  /* sticky or fixed are fine */
+  position: fixed;
+  top: 0;
+  height: 69px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(224, 239, 245), rgba(182, 234, 245, 0.5) 80%, rgba(10, 191, 227, 0.5));
+  /* background when scroll is in the top */
+  transition: background .5s;
+  /* control how smooth the background changes */
+}
+
+.nav-main ul li {
+  font-weight: 400;
+}
+
+.nav-logo {
+  padding-left: 90px;
+}
+
+.nav-image {
+  height: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-logo {
+    padding-left: 0;
+  }
+
+  .nav-li {
+    padding: 0;
+  }
+}
+
+.nav-li {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.list-button {
+  margin-right: 80px;
+  font-size: 15px;
+}
+
+.nav-dropdwn {
+  font-size: 12px;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: #095fea !important;
+}
+
+.dropdown-item:hover {
+  color: white !important;
+  background-color: #1d66db !important;
+}
+
+/* Services1 style sheet */
+
+.services-head {
+  background-image: linear-gradient(rgba(54, 47, 74, 0.80), rgba(54, 47, 74, 0.80)), url(/public/images/team-meeting.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.services-H1-main-page {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding-top: 150px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.services-image {
+  border-radius: 5px;
+}
+
+.services-icon {
+  font-size: 50px;
+  color: rgb(53, 84, 131);
+}
+
+.services-text {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.services-para {
+  font-size: 14px;
+}
+
+.services-background {
+  background-image: url(/public/images/cta-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 0px;
+  margin-top: 100px;
+}
+
+.services-background h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #050505;
+  line-height: 50px;
+}
+
+.services-background h4 em {
+  font-style: normal;
+  color: #3B6AB3;
+}
+
+.services-background h4 strong {
+  color: #ff511a;
+  font-weight: 700;
+}
+
+.services-background .buttons .first-button,
+.services-background .buttons .second-button {
+  margin-top: 25px;
+  margin: 10px;
+}
+
+.services-background .buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.first-button a {
+  font-size: 14px;
+  color: #fff;
+  background-color: #030303;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.first-button a:hover {
+  color: #3B6AB3;
+  background: #f1f1f2;
+}
+
+.second-button a {
+  font-size: 14px;
+  color: #fff;
+  background-color: #030303;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.second-button a:hover {
+  color: #3B6AB3;
+  background: #f1f1f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-main {
+  margin-top: 120px;
+}
+
+.section-head h6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #030303;
+  font-weight: 700;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-head h4 {
+  margin-top: 10px;
+  line-height: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #212741;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media sereen and (min-width: 992px) {
+  .offset-lg-3 {
+    margin-left: 20%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* css code for tabs  /////////////////////////////////////////////////////////*/
+body {
+  background-color: #f1f1f2;
+}
+
+.tile {
+  width: 80%;
+  margin: 60px auto;
+}
+
+#tile-1 .tab-pane {
+  padding: 15px;
+  /* height: 80px; */
+}
+
+#tile-1 .nav-tabs {
+  position: relative;
+  border: none !important;
+  background-color: #fff;
+  /*   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); */
+  border-radius: 6px;
+}
+
+#tile-1 .nav-tabs li {
+  margin: 0px !important;
+}
+
+#tile-1 .nav-tabs li a {
+  position: relative;
+  margin-right: 0px !important;
+  padding: 20px 40px !important;
+  font-size: 16px;
+  border: none !important;
+  color: #333;
+}
+
+#tile-1 .nav-tabs a:hover {
+  background-color: #fff !important;
+  border: none;
+}
+
+/* #tile-1 .slider
+{
+  display:inline-block;
+  width:30px;
+  height:4px;
+  border-radius:3px;
+  background-color:#39bcd3;
+  position:absolute;
+  z-index:1200;
+  bottom:0;
+  transition:all .4s linear;
+  
+} */
+#tile-1 .nav-tabs .active {
+  background-color: transparent !important;
+  border: none !important;
+  color: #f13535 !important;
+}
+
+/* ends */
+
+.right-content h4 {
+  font-size: 24px;
+  color: #212741;
+  margin-bottom: 25px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.right-content p {
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #212741;
+}
+
+.right-content span {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #212741;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+/* .card-items {
+  padding: 50px;
+} */
+
+@media screen and (min-width: 767px) {
+  .card-items i {
+    margin-bottom: 60px;
+  }
+}
+
+.card-items i {
+  width: 70px;
+  height: 70px;
+  background-color: #3B6AB3;
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  font-size: 44px;
+  border-radius: 5px;
+}
+
+.card-items p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.card-items h4 {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+}
+
+.card-items span {
+  margin-top: 5px;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3B6AB3;
+}
+
+/* css for about and service ///////////////////////////////////////////////*/
+
+.service-icon-services {
+  color: rgba(50, 50, 131, 0.918);
+  font-size: 60px;
+}
+
+
+.pding {
+  padding-bottom: 50px;
+}
+
+.box-shadow {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+/* about */
+
+.about-mrg {
+  margin-top: 100px;
+}
+
+.about-headings {
+  text-align: center;
+
+}
+
+.about-headings h3 {
+  margin-top: -10px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.about-headings h5 {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.about-buttons {
+  background-color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  /* box-shadow: 10px 10px 5px lightblue; */
+}
+
+about-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-color: #DDDFFD; */
+  padding: 0 16px;
+  border-radius: 6px;
+}
+
+
+.about-pro-title {
+  color: rgba(101, 101, 187, 0.962);
+
+}
+
+.about-content {
+  font-weight: normal;
+}
+
+.about-side-content p {
+  font-size: 16px;
+}
+
+/* @media screen and (max-width:786px) {
+  .about-side-content{
+  display: flex;
+  justify-content: right;
+  margin: 500px;
+  }
+  
+} */
+
+.about-content-heading {
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+/* .about-content-heading::after:c */
+.about-span {
+  font-weight: bold;
+}
+
+/* css for contact us and footer and footertext */
+
+.contact-headbgimg {
+  background-image: url("https://img.freepik.com/premium-photo/contact-us-business-icon-black-computer-keyboard-with-glow-dark_117856-2834.jpg?w=740");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.contact-headtag {
+  padding-top: 200px;
+  padding-bottom: 200px;
   color: white;
+  font-size: 30px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-card {
+  margin-top: 20px;
+  padding: 30px;
+  width: 70%;
+  height: 200px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info h4 {
+  color: rgb(12, 12, 156);
+}
+
+.contact-field {
+  flex: 0 0 auto;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.contact-area {
+  margin-top: 20px;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.contact-button {
+  margin-top: 25px;
+  width: 100%;
+}
+
+/* footer*/
+
+.foot {
+  color: white;
+  background-color: rgb(139, 9, 9);
+  text-align: center;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.foot-text {
+  background-color: lightgray;
+}
+
+.textaera {
+  padding-bottom: 180px;
+  padding-top: 20px;
+}
+
+.contct-btn {
+  background-color: orangered;
+  color: white;
+  margin-top: 10px
+}
+
+.fmbgclr {
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* css code for caurosal and about us ///////////////////////////////////////// */
+
+/* Aboutus */
+
+.aboutus-head {
+  background-image: linear-gradient(rgba(54, 47, 74, 0.80), rgba(54, 47, 74, 0.80)), url(/public/images/team-meeting.jpg);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.aboutus-H1-main-page {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding-top: 150px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.aaa h4 {
+  color: #3B6AB3;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.aaa p {
+  font-size: 13px;
+  margin-left: 10px;
+
+}
+
+.card {
+  margin-top: 0px;
+}
+
+.ddd h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: -8rem;
+  margin-left: 100px;
+}
+
+.lkl {
+  color: #3B6AB3;
+
+}
+
+.kkr h3 {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.kkr p {
+  font-size: 15px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.737);
+}
+
+.kjh {
+  font-size: 14px;
+  color: #fff;
+  background-color: #030303;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.kjh:hover {
+  color: #3B6AB3;
+  background: #f1f1f2;
+}
+
+.rrr h3 p {
+  border-radius: 5px;
+  padding: 40px 30px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.rrr {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+
+.rrr h3 {
+  font-size: 22px;
+}
+
+/* background css */
+.aboutus-background {
+  background-image: url(/public/images/cta-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 0px;
+  margin-top: 100px;
+}
+
+.aboutus-background h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #050505;
+  line-height: 50px;
+}
+
+.aboutus-background h4 em {
+  font-style: normal;
+  color: #3B6AB3;
+}
+
+.aboutus-background h4 strong {
+  color: #ff511a;
+  font-weight: 700;
+}
+
+.aboutus-background .buttons .first-button,
+.aboutus-background .buttons .second-button {
+  margin-top: 25px;
+  margin: 10px;
+}
+
+.aboutus-background .buttons {
+  display: flex;
+  justify-content: end;
+}
+
+/* ends    */
+
+
+/* cousel */
+.carlimg1 {
+  background-image: url("https://img.freepik.com/free-photo/aerial-view-cargo-ship-cargo-container-harbor_335224-1380.jpg?w=1060&t=st=1668080411~exp=1668081011~hmac=33a0534fe426139c2771b100507194125f33001f48feaa0f0b02fd72c646807b");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carols-imgpding {
+  padding-top: 220px;
+  padding-bottom: 220px;
+  color: rgb(29, 27, 27);
+}
+
+.carlimg2 {
+  background-image: url("https://img.freepik.com/free-photo/aerial-view-cargo-ship-cargo-container-harbor_335224-1374.jpg?w=1060&t=st=1668081687~exp=1668082287~hmac=326325e0d4ccfee425331cd084e218538cebe6e287f4d889f57ea4e642106c6b");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carols-imgpding1 {
+  padding-top: 220px;
+  padding-bottom: 220px;
+  color: rgb(28, 4, 4);
+}
+
+.carlimg3 {
+  background-image: url("https://img.freepik.com/free-photo/robots-efficiently-sorting-hundreds-parcels-per-hour-3d-rendering_41470-3492.jpg?w=1060&t=st=1668080529~exp=1668081129~hmac=0e9051d3b79c9f283676e10268c7647e304c9efb9b05db49358bdcdbe7def751");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carols-imgpding2 {
+  padding-top: 220px;
+  padding-bottom: 220px;
+  color: rgb(17, 16, 16);
 }
