@@ -19,9 +19,9 @@ const App = () => {
           <Route exact path='/' element={<Carousel />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/services' element={<Services />} />
-          <Route exact path='/our services' element={<Services1 />} />
-          <Route exact path='/contact us' element={<ContactUs />} />
           <Route exact path='/about us' element={<Aboutus />} />
+          <Route exact path='/our services' element={<Services1 />} />
+          <Route exact path='/contact us' element={<ContactUs />} />          
         </Routes>
         <Foottext />
         <Footer />
