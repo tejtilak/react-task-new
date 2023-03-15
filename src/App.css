@@ -442,6 +442,10 @@ body {
   color: rgb(12, 12, 156);
 }
 
+.contact-card:hover{
+  background: lightblue;
+}
+
 .contact-field {
   flex: 0 0 auto;
   width: 50%;

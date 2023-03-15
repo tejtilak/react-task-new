@@ -18,7 +18,7 @@ const ContactUs = () => {
             </div>
 
             <div className="container">
-                <div className='row'>
+                <div className='row justify-content-center'>
                     <div className='col-md-4'>
                         <div className='contact-card card'>
                             <div className='info'>

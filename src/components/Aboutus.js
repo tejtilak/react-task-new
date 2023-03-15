@@ -34,30 +34,29 @@ const Aboutus = () => {
         </div>
 
         <div className='aboutus-background'>
-                <div className='container mt-5'>
-                    <div className='row'>
-                        <div className='col-lg-5'>
-                            {/* <h4>Business 
-                                <em>Solutions</em>and
-                                <strong>Crypto</strong>
-                                Investments
-                            </h4> */}
-                        </div>
+          <div className='container mt-5'>
+            <div className='row'>
+              <div className='col-lg-5'>
+                {/* <h4>Business
+                  <em>Solutions</em>and
+                  <strong>Crypto</strong>
+                  Investments
+                </h4> */}
+              </div>
 
-                        <div className='col-lg-7'>
-                            <div className='buttons'>
-                                <div className='first-button'>
-                                    <Link to='#'>Discover More</Link>
-                                </div>
-                                <div className='second-button'>
-                                    <Link to='/contact us'>Contact us</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div className='col-lg-7'>
+                <div className='buttons'>
+                  <div className='first-button'>
+                    <Link to='#'>Discover More</Link>
+                  </div>
+                  <div className='second-button'>
+                    <Link to='/contact us'>Contact us</Link>
+                  </div>
                 </div>
+              </div>
             </div>
-
+          </div>
+        </div>
 
         <div className='container mt-4'>
           <div className='row'>
