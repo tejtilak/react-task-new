@@ -15,7 +15,6 @@ const Aboutus = () => {
 
           </div>
 
-
           <div className='col-md-6 card mt-5 shadow border-0 bg-white rounded ' >
 
             <div className='aaa mt-2'>
@@ -26,7 +25,6 @@ const Aboutus = () => {
               <h4>Mexant Crypto Investing <i class="fa fa-chevron-down" aria-hidden="true"></i></h4><br /><br />
 
               <h4>Cryptocurrency Investments<i class="fa fa-chevron-down" aria-hidden="true"></i></h4><br />
-
             </div>
 
           </div>
