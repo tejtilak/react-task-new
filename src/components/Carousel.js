@@ -14,7 +14,7 @@ const Carousel = () => {
 
                 <div className='buttons d-flex justify-content-center'>
                   <div className='first-button mr-2'>
-                    <Link to='#'>Discover More</Link>
+                    <Link to='/'>Discover More</Link>
                   </div>
                   <div className='second-button'>
                     <Link to='/contact us'>Contact us</Link>
@@ -30,7 +30,7 @@ const Carousel = () => {
 
                 <div className='buttons d-flex justify-content-center'>
                   <div className='first-button mr-2'>
-                    <Link to='#'>Discover More</Link>
+                    <Link to='/'>Discover More</Link>
                   </div>
                   <div className='second-button'>
                     <Link to='/contact us'>Contact us</Link>
@@ -46,7 +46,7 @@ const Carousel = () => {
 
                <div className='buttons d-flex justify-content-center'>
                   <div className='first-button mr-2'>
-                    <Link to='#'>Discover More</Link>
+                    <Link to='/'>Discover More</Link>
                   </div>
                   <div className='second-button'>
                     <Link to='/contact us'>Contact us</Link>
