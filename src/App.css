@@ -13,7 +13,7 @@ body {
   top: 0;
   height: 69px;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(224, 239, 245), rgba(182, 234, 245, 0.5) 80%, rgba(10, 191, 227, 0.5));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(251, 255, 255, 1) 80%, rgba(255, 255, 255, 1));
   /* background when scroll is in the top */
   transition: background .5s;
   /* control how smooth the background changes */
@@ -53,6 +53,7 @@ body {
 
 .nav-dropdwn {
   font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.049);
 }
 
 .nav-link {
@@ -66,6 +67,12 @@ body {
 .dropdown-item:hover {
   color: white !important;
   background-color: #1d66db !important;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-collapse.show {
+    background: rgba(0, 0, 0, 0.289);
+  }
 }
 
 /* Services1 style sheet */
@@ -302,7 +309,7 @@ body {
   color: #fff;
   font-size: 44px;
   border-radius: 5px;
-} 
+}
 
 .card-items p {
   font-size: 16px;
@@ -442,7 +449,7 @@ body {
   color: rgb(12, 12, 156);
 }
 
-.contact-card:hover{
+.contact-card:hover {
   background: lightblue;
 }
 
